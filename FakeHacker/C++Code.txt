@@ -1,0 +1,37 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+//main
+int main() {
+	//declarations
+	bool finished = false;
+	bool found = false;
+	string alphabets = "abcdefghijklmnopqrstuvwxyz";
+	string bruted = "zzzz";		//because we want to iterate first in the loop and check password later, so the first checked will be "aaaa"
+	string password;
+	
+	//get password from the user
+	cout << "Enter a 4 letter password: "; cin >> password;
+	
+	//loop while the password is not found and there are remaining combinations
+	while (!(finished || found)) {
+		//TODO: find next "bruted" value to check
+		
+		
+		//TODO: check if "bruted" is the password and set "found"
+		
+		
+		//TODO: check if it is a last possible option and set "finished"
+		
+	}//while
+	
+	//output findings
+	if (found) {
+		cout << "The password is: " << endl;
+	} else if (finished) {
+		cout << "No 4 character password found" << endl;
+	} else {
+		cout << "This line should never happen" << endl;
+	}//if
+}//main

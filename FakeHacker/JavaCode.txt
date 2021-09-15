@@ -1,0 +1,62 @@
+import java.util.Arrays;
+
+public class BruteForce {
+  public static void main(String[] args) {
+    bruteForce(3);
+  }
+
+  public static String bruteForce(int size) {
+    int[] password = new int[size];
+    String[] finalPassword = new String[size];
+    for (int i = 0; i < size; i++) {
+      password[i] = 0;
+      finalPassword[i] = "";
+    }
+    String pass = "AAA";
+    return computePermutations(size, password, 0, pass);
+  }
+
+  private static String computePermutations(int size, int[] password, int position, String pass) {
+    String testString = "";
+    String assemble = "";
+    for (int i = 0; i < 36; i++) {
+      password[position] = i;
+
+      if (position != size - 1) {
+        testString = computePermutations(size, password, position + 1, pass);
+        if (testString != "") {
+          return testString;
+        }
+      } else if (position == size - 1) {
+        for (int j = 0; j < size; j++) {
+
+          switch (password[j] + 1) {
+            case 1:
+              assemble = assemble + "A";
+              break;
+            case 2:
+              assemble = assemble + "B";
+              break;
+            case 3:
+              assemble = assemble + "C";
+              break;
+            case 4:
+              assemble = assemble + "D";
+              break;
+          }
+
+        }
+        System.out.println(assemble);
+        if (assemble.equalsIgnoreCase(pass)) {
+          System.out.println("Password is: " + assemble);
+          break; //replace this with: return assemble;
+        } else {
+          assemble = "";
+        }
+      }
+
+
+    }
+    return "";
+  }
+}
