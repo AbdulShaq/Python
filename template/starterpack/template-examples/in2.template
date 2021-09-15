@@ -1,0 +1,9 @@
+# This file uses variables but not bullet lists
+
+If  only I  had known about $a$,
+I would  not have $b$.
+Oh  well, better  luck next time.
+# This comment should not break the paragraph
+That is all, for this paragraph.
+
+$footer$

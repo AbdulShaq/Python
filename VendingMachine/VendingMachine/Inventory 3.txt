@@ -1,0 +1,6 @@
+5,35,Gum
+5,15,Mints
+5,65,Almond cookies
+5,45,Fruit leather
+5,25,An empty candy wrapper
+5,95,An olympic gold medal

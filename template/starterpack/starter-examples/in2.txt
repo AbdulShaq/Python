@@ -1,0 +1,22 @@
+
+
+
+Blank
+lines
+mark
+paragraph
+boundaries.
+Otherwise, consecutive non-blank lines are put together in a single paragraph.
+
+
+Blank lines at the beginning of the file
+should not result in an empty paragraph.
+Similarly, many blank lines between paragraphs
+should be treated in the same way as a single
+blank line.
+
+
+
+
+
+The file need not end in a blank line.

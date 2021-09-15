@@ -1,0 +1,6 @@
+1,115,Raisins
+5,225,Salmon jerky
+3,155,Ripply chips
+10,40,Vitamin pellets
+5,65,A single grape
+0,125,Pretzels
