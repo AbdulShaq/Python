@@ -1,6 +1,0 @@
-short line
-longer line
-much longer line with more words
-and
-line that ties the previous one!
-nothing else
